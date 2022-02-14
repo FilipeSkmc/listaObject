@@ -1,0 +1,27 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium">
+			<h1 class="slds-text-heading_large">
+				Estrutura de Dados
+			</h1>
+			<p> {pessoa.nome}</p>
+			<p> {pessoa.tel}</p>
+			<p> {pessoa.idade}</p>
+			<p> {pessoa.status}</p>
+
+			<!--
+					template for:each pega uma lista de valores e acessa valores
+					de maneira independente. for:item será a variável que recebe o objeto
+					de maneira individual a cada repetição
+				-->
+			<h1 class="slds-text-heading_large">
+				Meus Pokemons
+			</h1>
+
+			<template for:each={pokemons} for:item="poke">
+				<p key={poke.cod}>Nome: {poke.nome}, tipo: {poke.tipo}, nível: {poke.nivel}</p>
+			</template>
+
+		</div>
+	</lightning-card>
+</template>
