@@ -1,5 +1,5 @@
 {
-  "name": "@wcd/filipeskmc.lwc-kzmobwra",
+  "name": "@wcd/filipeskmc.estruturadedados",
   "version": "0.0.0",
   "scripts": {
     "serve": "npx wcd-cli@latest serve yV2GDbRuqtsW1DnKhMNz --open"
